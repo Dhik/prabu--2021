@@ -87,7 +87,7 @@
               </div>
               <div class="ratio ratio-16x9 mt-md-2 mt-sm-2" v-else>
                 <video muted loop autoplay controls>
-                  <source :src="iklan" type="video/mp4" >
+                  <source :src="iklan" type="video/mp4" />
                 </video>
               </div>
             </transition>
@@ -97,13 +97,12 @@
       <!-- Sponsor -->
 
       <div class="container_footer">
-          <div class="sponsor">Sponsor</div>
-           <div class="row justify-content-between">
+        <div class="sponsor">Sponsor</div>
+        <div class="row justify-content-between">
           <div class="col-lg">
-               <img class="gambar-sponsor p-3" src="./img/line.jpg" alt="" />
-                <img class="gambar-sponsor p-3" src="./img/frisian.png" alt="" />
-                <img class="gambar-sponsor p-3" src="./img/logo_byu.png" alt="" />
-              <!-- <img class="gambar-sponsor" src="./img/logo_Lion.jpg" alt="" /> -->
+            <img class="gambar-sponsor p-3" src="./img/frisian.png" alt="" />
+            <img class="gambar-sponsor p-3" src="./img/logo_byu.png" alt="" />
+            <!-- <img class="gambar-sponsor" src="./img/logo_Lion.jpg" alt="" /> -->
           </div>
         </div>
       </div>
@@ -157,7 +156,7 @@ export default {
       videos: {
         chat: "",
       },
-      iklan: ("../video.mp4"),
+      iklan: "../video.mp4",
       moment: moment,
       // {
       //   id: 1,
@@ -210,18 +209,16 @@ export default {
 @import "../assets/acara.css";
 @import "../assets/nav.css";
 
- @media screen and (max-width: 820px) { 
-        .gambar-sponsor{
-            max-width: 150px;
-            max-height: 150px;
-    }
-    
+@media screen and (max-width: 820px) {
+  .gambar-sponsor {
+    max-width: 150px;
+    max-height: 150px;
+  }
 }
- @media screen and (max-width: 750px) { 
-        .gambar-sponsor{
-            max-width: 120px;
-            max-height: 120px;
-    }
-    
+@media screen and (max-width: 750px) {
+  .gambar-sponsor {
+    max-width: 120px;
+    max-height: 120px;
+  }
 }
 </style>
